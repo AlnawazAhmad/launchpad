@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad - Access Your Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+            🚀 Launch<span>Pad</span>
+        </a>
+        <a href="index.html" class="btn-secondary" style="font-size: 14px;">← Back to Home</a>
+    </nav>
+
+    <!-- Auth Card Container -->
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            
+            <!-- Auth Tabs -->
+            <div class="auth-tabs">
+                <button class="tab-btn active" id="login-tab">Login</button>
+                <button class="tab-btn" id="register-tab">Register</button>
+            </div>
+
+            <!-- Global Message Alert -->
+            <div id="alert-msg" class="alert-box"></div>
+
+            <!-- LOGIN FORM -->
+            <form id="login-form" class="auth-form active-form" novalidate>
+                <h2>Welcome Back</h2>
+                <p class="auth-sub">Enter your credentials to access your account</p>
+
+                <div class="input-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" placeholder="name@example.com" required>
+                    <span class="error-text" id="login-email-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-password" placeholder="••••••••" required>
+                        <button type="button" class="toggle-pwd" data-target="login-password">👁️</button>
+                    </div>
+                    <span class="error-text" id="login-password-error"></span>
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit">Login to Account</button>
+            </form>
+
+            <!-- REGISTER FORM -->
+            <form id="register-form" class="auth-form" novalidate>
+                <h2>Create an Account</h2>
+                <p class="auth-sub">Start building and deploying in minutes</p>
+
+                <div class="input-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" placeholder="John Doe" required>
+                    <span class="error-text" id="reg-name-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-email">Email Address</label>
+                    <input type="email" id="reg-email" placeholder="name@example.com" required>
+                    <span class="error-text" id="reg-email-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-password">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="reg-password" placeholder="At least 6 characters" required>
+                        <button type="button" class="toggle-pwd" data-target="reg-password">👁️</button>
+                    </div>
+                    <span class="error-text" id="reg-password-error"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-confirm-password">Confirm Password</label>
+                    <input type="password" id="reg-confirm-password" placeholder="Repeat password" required>
+                    <span class="error-text" id="reg-confirm-password-error"></span>
+                </div>
+
+                <button type="submit" class="btn-primary auth-submit">Create Account</button>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+# 🚀 LaunchPad - Modern Developer Landing Page & Auth Flow
+
+LaunchPad is a responsive, high-performance SaaS landing page and authentication portal built using pure HTML5, CSS3 (CSS Variables, Flexbox, Grid), and Vanilla JavaScript (ES6+). It features dark/light mode toggling, interactive feature grids, and client-side authentication validation.
+
+![Status](https://img.shields.io/badge/Status-Live-brightgreen)
+![Tech Stack](https://img.shields.io/badge/Tech-HTML5%20%7C%20CSS3%20%7C%20JS-blue)
+![License](https://img.shields.io/badge/License-MIT-orange)
+
+🔗 **Live Demo:** [https://launchpad-landing-page.vercel.app](https://launchpad-landing-page.vercel.app)
+
+---
+
+## ✨ Key Features
+
+- **🎨 Dynamic Dark/Light Theme:** Smooth transition between light and dark mode using CSS Custom Properties (`var(--bg-color)`).
+- **📱 Fully Responsive Design:** Modern Flexbox and CSS Grid layout optimized for mobile, tablet, and desktop viewports.
+- **🔐 Interactive Auth Portal (`login.html`):**
+  - Seamless tab switching between **Login** and **Register** forms without page reloads.
+  - Show/Hide password toggle (`👁️️` / `🙈`).
+  - Real-time client-side form validation (Email regex check, password strength, and match validation).
+  - Dynamic success/error alert banners.
+- **⚡ Zero External Dependencies:** Fast, lightweight, and dependency-free (Vanilla JS).
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+| :--- | :--- |
+| **HTML5** | Semantic layout structure and modern form components |
+| **CSS3** | Flexbox, Grid, CSS Variables for theming, CSS Transitions |
+| **JavaScript (ES6+)** | DOM Manipulation, Form Validation, Theme State Logic |
+| **Vercel / Netlify** | Continuous Deployment & Cloud Hosting |
+
+---
+
+## 📁 Project Structure
